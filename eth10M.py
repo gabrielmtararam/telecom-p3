@@ -33,3 +33,4 @@ def decode(signal):
         indice += 1
 
     return bytes(resultado)
+
