@@ -1,5 +1,6 @@
 # Interface Ethernet
 
+
 Esta é uma versão preliminar da prática. Em ofertas futuras da disciplina, pretendemos desenvolver uma placa de rede completa, capaz de enviar e receber quadros e lidar com problemas de acesso ao meio, como colisão.
 
 Mas por hora, a prática vai focar apenas na decodificação dos sinais obtidos de uma mídia Ethernet 10baseT. Esses sinais foram gravados por um [analisador lógico improvisado](https://github.com/thotypous/tangnano9k-bsv-uart-test/tree/analyzer) com a entrada LVDS da Tang Nano 9k. Implementamos uma máquina de estados simples em hardware que espera os primeiros ciclos do preâmbulo para disparar o *trigger* do analisador lógico e, a partir desse momento, coletamos uma quantidade fixa de amostras a 81 MHz. Ou seja, **o sinal que vamos processar já está padronizado com uma fase constante com relação ao início do quadro**.
